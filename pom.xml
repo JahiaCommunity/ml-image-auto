@@ -17,9 +17,67 @@
     <description>This is the custom module (Image Alt Text auto generation (ML)) for running on a Digital Experience Manager server.</description>
 
     <scm>
-        <connection>scm:dummy:uri</connection>
-        <developerConnection>scm:dummy:uri</developerConnection>
+        <connection>scm:git:git@github.com:JahiaCommunity/ml-image-auto-alttext.git</connection>
+        <developerConnection>scm:git:git@github.com:JahiaCommunity/ml-image-auto-alttext.git</developerConnection>
+        <url>scm:git:git@github.com:JahiaCommunity/ml-image-auto-alttext.git</url>
+        <tag>HEAD</tag>
     </scm>
+
+    <organization>
+        <name>Jahia Community</name>
+        <url>https://www.jahiacommunity.org</url>
+    </organization>
+    <developers>
+        <developer>
+            <id>cedfou</id>
+            <name>FOURNEAU Cédric</name>
+            <organization>JahiaCommunity</organization>
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <organization>JahiaCommunity</organization>
+        </contributor>
+    </contributors>
+    <url>https://github.com/JahiaCommunity/ml-image-auto-alttext</url>
+
+
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/JahiaCommunity/ml-image-auto-alttext/issues</url>
+    </issueManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub JahiaCommunity Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/JahiaCommunity/ml-image-auto-alttext</url>
+        </repository>
+    </distributionManagement>
+
+
+    <profiles>
+        <profile>
+            <id>github</id>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>https://repo1.maven.org/maven2</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>github</id>
+                    <name>GitHub JahiaCommunity Apache Maven Packages</name>
+                    <url>https://maven.pkg.github.com/JahiaCommunity/ml-image-auto-alttext</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
 
     <repositories>
         <repository>
