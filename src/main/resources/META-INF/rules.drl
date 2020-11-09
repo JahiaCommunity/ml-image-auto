@@ -1,0 +1,26 @@
+package org.jahiacommunity.modules.mlimageauto.rules
+
+// list any import classes here.
+import org.jahia.services.content.rules.*
+import org.jahia.services.content.JCRContentUtils
+import org.slf4j.Logger
+import services.*
+import Impl.*
+
+expander rules.dsl
+
+// declare any global variables here
+global User user
+global Service service
+global Logger logger
+global JCRContentUtils jcrUtils
+global org.jahiacommunity.ml.image.services.ComputerVisionService computerVisionService
+
+rule "ML Generate Caption"
+    when
+        Not in operation import
+        Image data has been changed on a node
+    then
+       Log "Image data has been changed on " + node.getPath() + "."
+       Autogenerate image caption on the node
+end
