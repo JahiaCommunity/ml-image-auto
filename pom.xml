@@ -28,11 +28,6 @@
             <artifactId>joda-time</artifactId>
             <version>2.10</version>
         </dependency>
-        <dependency>
-            <groupId>org.jahia.modules</groupId>
-            <artifactId>default</artifactId>
-            <version>7.2.2</version>
-        </dependency>
     </dependencies>
 
     <scm>
